@@ -8,6 +8,8 @@ Created on Wed Apr 12 10:19:06 2023
 
 # Task 3: Interpretation of loop codes
 
+print("Welcome to Task 3(b) solution.\n")        #Calls print function - Welcome message
+
 i = 1           #Assign the variable: Integer '1' into variable 'i'
 
 while i < 3:    #Initialize the while/else loop. Continues loop for as long as variable "i" is less than integer 3
