@@ -3,7 +3,7 @@ import time                                         #Imports time module
 UserDatabase = {}                                   #Creates dictionary for storing players name & score
 
 def MainMenu():
-    """Function which gives main menu"""            #Doc string which describes purpose of function
+    """Function which gives main menu"""            #Doc string which describes the purpose of function
     checkInput = None                               #Resets selection each time function is called
     print("\n" + "===" * 20)
     print("\n**Welcome to Champions Soccer Club**")
@@ -31,7 +31,7 @@ def MainMenu():
         
 
 def AddPlayerDetails():
-    """Function to add players name & score (Case #1)"""        #Doc string which describes purpose of function
+    """Function to add players name & score (Case #1)"""        #Doc string which describes the purpose of function
     Name = input("\nEnter the player name \t:")
     Score = input("Enter the score \t:")
     try:                                                        #Try/except statement to reduce program crash in case of incorrect selection
@@ -43,12 +43,12 @@ def AddPlayerDetails():
         print("Invalid Entry.\nTry Again")
         AddPlayerDetails()
 
-    UserDatabase[Name] = Score                                  #Assigns Name & Score as key value pairs to dictionary
+    UserDatabase[Name] = Score                                  #Assigns Name & Score as key-value pairs to dictionary
     UserSelection()                                             #Calls UserSelection function after AddPlayerDetails function ends
 
 
 def UserSelection():
-    """Function which directs user to either MainMenu or AddPlayerDetails functions"""      #Doc string which describes purpose of function
+    """Function which directs user to either MainMenu or AddPlayerDetails functions"""      #Doc string which describes the purpose of function
     userInput = str(input("Do you want to add another player? Enter Y for Yes, N for  No\t:  "))
     if(userInput.upper() == "Y"):                               #Checks user input. Converts to upper case
         AddPlayerDetails()                                      #Function called for 'Y' selection
@@ -60,7 +60,7 @@ def UserSelection():
                            
             
 def ViewUserDetails():
-    """Function to view all entries for Userselection function (Case #2)"""                 #Doc string which describes purpose of function
+    """Function to view all entries for Userselection function (Case #2)"""                 #Doc string which describes the purpose of function
     print("\nPlayer & Score Details")
     print("\n" + '-' * 30 + "\n")
     print("Player" + "\t"*2 + "Score")
@@ -71,4 +71,4 @@ def ViewUserDetails():
 
 
                                    
-MainMenu()                                                      # Calling the Entry point of the applicatiion.
+MainMenu()                                                      #Calling the Entry point of the applicatiion.
