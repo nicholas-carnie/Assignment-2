@@ -38,10 +38,10 @@ def AddPlayerDetails():
         checkScore = int(Score)
         if(checkScore > 100 or checkScore < 0):
             print("\n**Incorrect score** The scores should be from 0-100.\nPlease try again!")
-            MainMenu()
+            AddPlayerDetails()
     except ValueError:
         print("Invalid Entry.\nTry Again")
-        MainMenu()
+        AddPlayerDetails()
 
     UserDatabase[Name] = Score                                  #Assigns Name & Score as key value pairs to dictionary
     UserSelection()                                             #Calls UserSelection function after AddPlayerDetails function ends
